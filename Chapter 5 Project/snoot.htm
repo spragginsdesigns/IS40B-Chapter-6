@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <!--
-      JavaScript 6th Edition
-      Chapter 6
-      Chapter case
-
-      Snoot Flowers order form
-      Author: Austin Spraggins
-      Date:   11/19/2020
-
-      Filename: snoot.htm
-   -->
    <meta charset="utf-8" />
    <meta name="viewport" content="width=page-width, initial-scale=1.0">
    <title>Snoot Flowers - Order</title>
    <link rel="stylesheet" href="snoot.css" />
    <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+   <link rel="icon" 
+      type="image/png" 
+      href="./favicon.ico/flower.ico">
    <script src="modernizr.custom.65897.js"></script>
 </head>
 
@@ -40,23 +32,6 @@
       
    <article>
       <h2>Place an Order</h2>
-      <div id="errorText"></div>
-      <form action="results.htm">
-         <fieldset id="message" class="checks">
-            <legend>Message</legend>
-            <input id="congrats" name="Congratulations" type="checkbox" />
-            <label for="congrats">Congratulations!</label>
-            <input id="bday" name="HappyBirthday" type="checkbox" />
-            <label for="bday">Happy Birthday!</label>
-            <input id="anniv" name="HappyAnniversary" type="checkbox" />
-            <label for="anniv">Happy Anniversary!</label>
-            <input id="love" name="ILoveYou" type="checkbox" />
-            <label for="love">I love you!</label>
-            <input id="custom" name="CustomMessage" type="checkbox" />
-            <label for="custom">Custom message:</label>
-            <textarea id="customText" name="CustomText" placeholder="Enter custom message here (max 250 characters)"></textarea>
-            <div class="errorMessage"></div>
-          </fieldset>
          <fieldset id="billingAddress" class="text">
             <legend>Billing Address</legend>
             <label for="billFName">First Name</label>
@@ -256,68 +231,6 @@
                   <option value="2018">2018</option>
                </select>
             </div>
-            <div class="errorMessage"></div>
-         </fieldset>
-         <fieldset id="paymentInfo" class="text">
-            <legend>Payment</legend>
-            <div id="cards" class="inline">
-               <input id="visa" name="PaymentType" type="radio" value="Visa" />
-               <label for="visa">Visa</label>
-               <input id="mc" name="PaymentType" type="radio" value="MC" />
-               <label for="mc">Master Card</label>
-               <input id="discover" name="PaymentType" type="radio" value="Discover" />
-               <label for="discover">Discover</label>
-               <input id="amex" name="PaymentType" type="radio" value="AmEx" />
-               <label for="amex">American Express</label>
-            </div>
-            <div>
-               <label for="ccNum">Card #</label>
-               <input id="ccNum" name="CardNumber" type="number" required="required" />
-               <div id="ccNumErrorMessage"></div>
-            </div>
-            <div>
-               <label>Expiration</label>
-               <div class="inline" id="exp">
-                  <label for="expMo" id="expMoLabel">Expiration Month</label>
-                  <select id="expMo" name="ExpMonth" required="required">
-                     <option value="01">01</option>
-                     <option value="02">02</option>
-                     <option value="03">03</option>
-                     <option value="04">04</option>
-                     <option value="05">05</option>
-                     <option value="06">06</option>
-                     <option value="07">07</option>
-                     <option value="08">08</option>
-                     <option value="09">09</option>
-                     <option value="10">10</option>
-                     <option value="11">11</option>
-                     <option value="12">12</option>
-                  </select>
-                  <label for="expYr" id="expYrLabel">Expiration Year</label>
-                  <select id="expYr" name="ExpYear" required="required">
-                     <option value="2017">2017</option>
-                     <option value="2018">2018</option>
-                     <option value="2019">2019</option>
-                     <option value="2020">2020</option>
-                     <option value="2021">2021</option>
-                  </select>
-               </div>
-               <label for="cvv">CVV</label>
-               <input id="cvv" name="CVVValue" type="number" required="required" /> 
-               <div id="cvvErrorMessage"></div>
-            </div>
-            <div class="errorMessage"></div>
-         </fieldset>
-         <fieldset id="createAccount" class="text">
-            <legend>Create Account?</legend>
-            <p>To be able to access your purchase history and make changes to your order, enter a name and password to create an account.</p>
-            <label for="username">Username</label>
-            <input id="username" name="NewUsername" type="text" />
-            <label for="pass1">Password</label>
-            <input id="pass1" name="Password1" type="password" />
-            <label for="pass2">Password (verify)</label>
-            <input id="pass2" name="Password2" type="password" />
-            <div class="errorMessage"></div>
          </fieldset>
          <div id="buttonContainer">
             <input type="submit" value="Place Order" id="orderButton" />
@@ -325,6 +238,6 @@
       </form>
    </article>
    <footer>Snoot Flowers <span>&bull;</span> Davenport, Iowa</footer>
-   <script src="snoot.js"></script>
+   <script type="text/javascript" src="snoot.js"></script>
 </body>
 </html>
